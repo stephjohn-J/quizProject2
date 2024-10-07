@@ -1,0 +1,95 @@
+*, *::before, *::after {
+    box-sizing: border-box; /* Ensures padding and border are included in element's width/height */
+    font-family: Gotham Rounded; /* Sets the font for all elements to 'Gotham Rounded' */
+  }
+  
+  :root {
+    --hue-neutral: 200; /* Defines the neutral hue (blueish color) */
+    --hue-wrong: 0; /* Defines the hue for a wrong answer (red) */
+    --hue-correct: 145; /* Defines the hue for a correct answer (green) */
+  }
+  
+  body {
+    --hue: var(--hue-neutral); /* Sets the default hue to neutral (blue) */
+    padding: 0; /* Removes default padding from the body */
+    margin: 0; /* Removes default margin from the body */
+    display: flex; /* Sets flexbox for centering content */
+    width: 100vw; /* Makes body span the entire viewport width */
+    height: 100vh; /* Makes body span the entire viewport height */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    background-color: hsl(var(--hue), 100%, 20%); /* Sets background color based on the hue variable */
+  }
+  .explanation {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  body.correct {
+    --hue: var(--hue-correct); /* Changes hue to green when correct class is added */
+  }
+  
+  body.wrong {
+    --hue: var(--hue-wrong); /* Changes hue to red when wrong class is added */
+  }
+  
+  .container {
+    width: 800px; /* Sets the width of the container to 800px */
+    max-width: 80%; /* Limits the container width to 80% of the viewport */
+    background-color: white; /* Sets container background to white */
+    border-radius: 5px; /* Rounds the corners of the container */
+    padding: 10px; /* Adds padding inside the container */
+    box-shadow: 0 0 10px 2px; /* Adds a subtle shadow around the container */
+  }
+  
+  .btn-grid {
+    display: grid; /* Applies grid layout to buttons */
+    grid-template-columns: repeat(2, auto); /* Creates 2 equal columns for buttons */
+    gap: 10px; /* Adds 10px space between buttons */
+    margin: 20px 0; /* Adds 20px margin above and below the button grid */
+  }
+  
+  .btn {
+    --hue: var(--hue-neutral); /* Sets button hue to the default neutral */
+    border: 1px solid hsl(var(--hue), 100%, 30%); /* Button border color based on hue */
+    background-color: hsl(var(--hue), 100%, 50%); /* Button background color based on hue */
+    border-radius: 5px; /* Rounds the corners of buttons */
+    padding: 5px 10px; /* Adds padding inside buttons (5px top/bottom, 10px left/right) */
+    color: white; /* Sets text color to white */
+    outline: none; /* Removes default focus outline from buttons */
+  }
+  
+  .btn:hover {
+    border-color: black; /* Changes border color to black when button is hovered */
+  }
+  
+  .btn.correct {
+    --hue: var(--hue-correct); /* Changes button hue to green for correct answers */
+    color: black; /* Changes text color to black for correct buttons */
+  }
+  
+  .btn.wrong {
+    --hue: var(--hue-wrong); /* Changes button hue to red for wrong answers */
+  }
+  
+  .start-btn, .next-btn ,.view-score-btn {
+    font-size: 1.5rem; /* Sets font size to 1.5rem for start/next buttons */
+    font-weight: bold; /* Makes the font bold */
+    padding: 10px 20px; /* Adds more padding to these buttons (10px top/bottom, 20px left/right) */
+  }
+  
+  .controls {
+    display: flex; /* Applies flexbox to control elements */
+    justify-content: center; /* Centers controls horizontally */
+    align-items: center; /* Centers controls vertically */
+  }
+  
+  .hide {
+    display: none; /* Hides elements with the hide class */
+  }
+  

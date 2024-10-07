@@ -1,0 +1,222 @@
+[
+  {
+    "question": "What is 'use strict' in JavaScript?",
+    "answers": [
+      { "text": "It enables strict mode to catch common coding mistakes", "correct": true },
+      { "text": "It prevents JavaScript from running in a browser", "correct": false },
+      { "text": "It allows the use of undeclared variables", "correct": false },
+      { "text": "It disables debugging tools", "correct": false }
+    ],
+    "explanation": "'use strict' is a directive in JavaScript that enforces stricter parsing and error handling rules, helping developers avoid common mistakes such as using undeclared variables."
+  },
+  {
+    "question": "What is the difference between '==' and '===' in JavaScript?",
+    "answers": [
+      { "text": "'==' compares values while '===' compares both values and types", "correct": true },
+      { "text": "'===' is more relaxed than '=='", "correct": false },
+      { "text": "They are the same", "correct": false },
+      { "text": "'===' only compares strings", "correct": false }
+    ],
+    "explanation": "'==' compares values but performs type coercion, meaning it converts values to a common type before comparison. '===' compares both values and types, without type coercion."
+  },
+  {
+    "question": "What is a closure in JavaScript?",
+    "answers": [
+      { "text": "A function inside another function that can access its outer scope", "correct": true },
+      { "text": "A function that gets destroyed after execution", "correct": false },
+      { "text": "A block of code that runs asynchronously", "correct": false },
+      { "text": "A loop that runs infinitely", "correct": false }
+    ],
+    "explanation": "A closure occurs when a function retains access to variables in its lexical scope even after the outer function has returned."
+  },
+  {
+    "question": "What is the output of '2' + 2 in JavaScript?",
+    "answers": [
+      { "text": "22", "correct": true },
+      { "text": "4", "correct": false },
+      { "text": "NaN", "correct": false },
+      { "text": "undefined", "correct": false }
+    ],
+    "explanation": "In JavaScript, the '+' operator concatenates strings. Since '2' is a string, the number 2 is coerced into a string, and '2' + 2 results in '22'."
+  },
+  {
+    "question": "What does the isNaN() function do?",
+    "answers": [
+      { "text": "Checks if a value is NaN", "correct": true },
+      { "text": "Checks if a value is a number", "correct": false },
+      { "text": "Checks if a value is undefined", "correct": false },
+      { "text": "Checks if a number is an integer", "correct": false }
+    ],
+    "explanation": "The isNaN() function checks if a value is NaN (Not-a-Number). This function is often used to validate inputs to ensure that they are numeric."
+  },
+  {
+    "question": "Which keyword is used to declare a constant in JavaScript?",
+    "answers": [
+      { "text": "const", "correct": true },
+      { "text": "var", "correct": false },
+      { "text": "let", "correct": false },
+      { "text": "constant", "correct": false }
+    ],
+    "explanation": "The 'const' keyword is used to declare constants in JavaScript, meaning their values cannot be reassigned after the initial assignment."
+  },
+  {
+    "question": "Which array method creates a new array with the results of calling a provided function on every element in the array?",
+    "answers": [
+      { "text": "map()", "correct": true },
+      { "text": "filter()", "correct": false },
+      { "text": "reduce()", "correct": false },
+      { "text": "forEach()", "correct": false }
+    ],
+    "explanation": "The 'map()' method creates a new array populated with the results of applying a function to every element in the original array."
+  },
+  {
+    "question": "How do you create an object in JavaScript?",
+    "answers": [
+      { "text": "By using curly braces {}", "correct": true },
+      { "text": "By using square brackets []", "correct": false },
+      { "text": "By using parentheses ()", "correct": false },
+      { "text": "By using double quotes \"\"", "correct": false }
+    ],
+    "explanation": "An object in JavaScript is created using curly braces {}, with key-value pairs inside."
+  },
+  {
+    "question": "What will be the output of `typeof null` in JavaScript?",
+    "answers": [
+      { "text": "'object'", "correct": true },
+      { "text": "'null'", "correct": false },
+      { "text": "'undefined'", "correct": false },
+      { "text": "'NaN'", "correct": false }
+    ],
+    "explanation": "`typeof null` in JavaScript returns 'object' due to a quirk in the language's early implementation. Null is a primitive type, not an object."
+  },
+  {
+    "question": "What is the purpose of the 'this' keyword in JavaScript?",
+    "answers": [
+      { "text": "It refers to the object that is executing the current function", "correct": true },
+      { "text": "It refers to the global object", "correct": false },
+      { "text": "It refers to the parent object", "correct": false },
+      { "text": "It refers to the next object", "correct": false }
+    ],
+    "explanation": "The 'this' keyword refers to the object that the function is a method of. Its value depends on how the function is called."
+  },
+  {
+    "question": "What is the event loop in JavaScript?",
+    "answers": [
+      { "text": "It handles asynchronous operations by queuing tasks", "correct": true },
+      { "text": "It runs synchronous tasks", "correct": false },
+      { "text": "It executes only promises", "correct": false },
+      { "text": "It is a type of loop used in arrays", "correct": false }
+    ],
+    "explanation": "The event loop is responsible for handling asynchronous callbacks by queuing tasks and executing them once the call stack is empty."
+  },
+  {
+    "question": "Which of the following is a falsy value in JavaScript?",
+    "answers": [
+      { "text": "0", "correct": true },
+      { "text": "'false'", "correct": false },
+      { "text": "'true'", "correct": false },
+      { "text": "[]", "correct": false }
+    ],
+    "explanation": "In JavaScript, 0 is a falsy value, meaning it evaluates to false in a boolean context. Other falsy values include '', null, undefined, NaN, and false."
+  },
+  {
+    "question": "How do you create a promise in JavaScript?",
+    "answers": [
+      { "text": "By using the Promise constructor", "correct": true },
+      { "text": "By using async/await", "correct": false },
+      { "text": "By using setTimeout()", "correct": false },
+      { "text": "By using try/catch", "correct": false }
+    ],
+    "explanation": "A promise in JavaScript is created using the `Promise` constructor, which takes a function with 'resolve' and 'reject' arguments to handle asynchronous operations."
+  },
+  {
+    "question": "What does the spread operator (...) do in JavaScript?",
+    "answers": [
+      { "text": "It expands elements of an array or object", "correct": true },
+      { "text": "It adds elements to an array", "correct": false },
+      { "text": "It merges two arrays", "correct": false },
+      { "text": "It slices an array into smaller arrays", "correct": false }
+    ],
+    "explanation": "The spread operator (...) expands an iterable (like an array or object) into individual elements."
+  },
+  {
+    "question": "What is hoisting in JavaScript?",
+    "answers": [
+      { "text": "The process of moving variable and function declarations to the top of their scope", "correct": true },
+      { "text": "The process of moving code inside a loop", "correct": false },
+      { "text": "The process of assigning values to undeclared variables", "correct": false },
+      { "text": "A way to call a function before it is declared", "correct": false }
+    ],
+    "explanation": "Hoisting in JavaScript refers to the behavior of moving variable and function declarations to the top of their scope before code execution."
+  },
+  {
+    "question": "What is the difference between 'let' and 'var'?",
+    "answers": [
+      { "text": "'let' has block scope, 'var' has function scope", "correct": true },
+      { "text": "'var' is block-scoped, 'let' is globally scoped", "correct": false },
+      { "text": "They are the same", "correct": false },
+      { "text": "'let' allows hoisting, 'var' does not", "correct": false }
+    ],
+    "explanation": "'let' is block-scoped, meaning it is only accessible within the block it was declared. 'var' is function-scoped, meaning it is accessible throughout the function."
+  },
+  {
+    "question": "What is the purpose of the 'async' keyword in JavaScript?",
+    "answers": [
+      { "text": "To declare a function as asynchronous", "correct": true },
+      { "text": "To pause the execution of a function", "correct": false },
+      { "text": "To speed up code execution", "correct": false },
+      { "text": "To run a function in a new thread", "correct": false }
+    ],
+    "explanation": "The 'async' keyword is used to declare an asynchronous function that returns a promise. It allows the use of 'await' to pause the execution of the function."
+  },
+  {
+    "question": "Which of the following is not a primitive data type in JavaScript?",
+    "answers": [
+      { "text": "Object", "correct": true },
+      { "text": "String", "correct": false },
+      { "text": "Number", "correct": false },
+      { "text": "Boolean", "correct": false }
+    ],
+    "explanation": "An object is not a primitive data type in JavaScript. The primitive types are string, number, boolean, null, undefined, and symbol."
+  },
+  {
+    "question": "What is the result of `typeof NaN`?",
+    "answers": [
+      { "text": "'number'", "correct": true },
+      { "text": "'NaN'", "correct": false },
+      { "text": "'undefined'", "correct": false },
+      { "text": "'object'", "correct": false }
+    ],
+    "explanation": "In JavaScript, `typeof NaN` returns 'number'. Although NaN stands for 'Not-a-Number', it is still of the numeric data type."
+  },
+  {
+    "question": "How can you convert a string to a number in JavaScript?",
+    "answers": [
+      { "text": "By using the parseInt() or parseFloat() functions", "correct": true },
+      { "text": "By using toNumber()", "correct": false },
+      { "text": "By using the string() method", "correct": false },
+      { "text": "By using JSON.parse()", "correct": false }
+    ],
+    "explanation": "In JavaScript, `parseInt()` and `parseFloat()` are used to convert strings into numbers, depending on whether you need an integer or a floating-point number."
+  },
+  {
+    "question": "What will be the output of `console.log([] + {})`?",
+    "answers": [
+      { "text": "'[object Object]'", "correct": true },
+      { "text": "'{}[]'", "correct": false },
+      { "text": "'undefined'", "correct": false },
+      { "text": "'null'", "correct": false }
+    ],
+    "explanation": "In JavaScript, adding an array and an object results in a string due to type coercion. The empty array becomes an empty string, and the object becomes '[object Object]'."
+  },
+  {
+    "question": "What is the 'bind()' method used for?",
+    "answers": [
+      { "text": "It binds a function to a specific context or 'this' value", "correct": true },
+      { "text": "It attaches an event listener to an element", "correct": false },
+      { "text": "It creates a new copy of an object", "correct": false },
+      { "text": "It merges two arrays into one", "correct": false }
+    ],
+    "explanation": "The 'bind()' method creates a new function that, when called, has its 'this' keyword set to the specified context (object)."
+  }
+]

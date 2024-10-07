@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="score.css" rel="stylesheet">
+    <title>Scores</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Results</h1>
+        <div id="result"></div>
+        <button onclick="window.location.href='index.html'" class="btn">Back to Quiz</button>
+    </div>
+    <script>
+         async function getData() {
+        const response = await fetch("/api");
+        const data = await response.json();
+
+        for (const item of data) {
+          const root = document.createElement("p");
+          const name = document.createElement("div");
+          const score = document.createElement("div");
+          const date = document.createElement("div");
+
+          name.textContent = item.name;
+          score.textContent = `You scored ${item.score} out of 20`;
+          date.textContent = new Date(item.timestamp).toLocaleString();
+
+          root.append(name, score, date);
+          document.body.append(root);
+        }
+        console.log(data);
+      }
+
+      getData();
+    </script>
+</body>
+</html>

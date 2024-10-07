@@ -1,0 +1,21 @@
+{
+  "name": "quizzprojectpart2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "quiz app"
+  },
+  "keywords": [
+    "js",
+    "css",
+    "html"
+  ],
+  "author": "Jibril",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.0",
+    "nedb": "^1.8.0",
+    "nodemon": "^3.1.7"
+  }
+}
